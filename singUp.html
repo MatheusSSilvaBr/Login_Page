@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Sing Up</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="formulario">
+        <div>
+          <h1 class="title-form">Formulário para inscrição</h1>
+          <hr />
+        </div>
+        <div class="info-container">
+          <div class="info">
+            <label for="nomeinput">Nome Completo:</label>
+            <input
+              class="input"
+              type="text"
+              name="nomeinput"
+              id="nome"
+              value=""
+              required
+            />
+          </div>
+          <div class="info">
+            <label for="email">Email:</label>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
+          <div class="info">
+            <label for="senha">Senha</label>
+            <input
+              class="input"
+              type="password"
+              name="senha"
+              id="senha"
+              required
+            />
+          </div>
+          <div class="info">
+            <label for="confirmar-senha">Confirmar Senha:</label>
+            <input
+              class="input"
+              type="password"
+              name="confirmar-senha"
+              id="confirmar-senha"
+              required
+            />
+          </div>
+          <div class="info">
+            <label for="data">Data de nascimento:</label>
+            <input type="date" name="data" id="data" required />
+          </div>
+          <div class="info">
+            <label for="endereco">Endereço:</label>
+            <input
+              class="input-endereco"
+              type="text"
+              name="endereco"
+              id="endereco"
+              required
+            />
+          </div>
+          <div>
+            <a href="./index.html" target="_blank"
+              ><input type="button" value="Voltar" class="button-registrar"
+            /></a>
+            <input
+              id="button"
+              type="submit"
+              value="Enviar"
+              class="button-registrar"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="./scripts/Registrar.js"></script>
+  </body>
+</html>
